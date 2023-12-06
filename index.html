@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IOT 12256</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module">
+      import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js';
+      import { getAnalytics } from 'https://www.gstatic.com/firebasejs/10.6.0/firebase-analytics.js';
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>IOT 12256</h1>
+
+      <div class="chart-container">
+        <canvas id="combinedChart" width="400" height="200"></canvas>
+      </div>
+
+      <div class="status-container">
+        <p>Buzzer Status: <span id="buzzerStatus">Loading...</span></p>
+        <p>Humidity: <span id="humidity">Loading...</span>%</p>
+        <p>Motion Detected: <span id="motionDetected">Loading...</span></p>
+        <p>Temperature: <span id="temperature">Loading...</span>°C</p>
+      </div>
+
+      <div class="control-container">
+        <label for="buzzerControl">Buzzer Control:</label>
+        <input
+          type="checkbox"
+          id="buzzerControl"
+          onchange="updateBuzzerStatus()"
+        />
+      </div>
+
+      <script src="app.js"></script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  max-width: 800px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.chart-container {
+  margin-bottom: 20px;
+}
+
+.status-container p {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.control-container {
+  margin-top: 20px;
+}
+
+label {
+  margin-right: 10px;
+  font-size: 16px;
+  color: #007bff;
+}
+
+input {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #007bff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input:checked {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+}
